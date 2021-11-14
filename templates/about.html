@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block title %}
+    <title>about | Our first web page</title>
+{% endblock title %}
+
+{% block content %}
+    <form method="post" action="/contact">
+        <input type="text" name="name" placeholder="Your name">
+        <input type="text" name="email" placeholder="Your email">
+
+        <textarea name="message" placeholder="Your message goes here"></textarea>
+
+        <button type="submit">Submit</button>
+    </form>
+{% endblock content %}
